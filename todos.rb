@@ -1,17 +1,17 @@
 # ask for a list of todos
 # and print them back to us
 
-puts "What is your next todo?"
+# puts "What is your next todo?"
 
-#get string
-next_todo = gets
+# #get string
+# next_todo = gets
 
-puts "So this is your next todo.."
-puts next_todo
+# puts "So this is your next todo.."
+# puts next_todo
 
-puts "\n\n" #Carriage Return
+# puts "\n\n" #Carriage Return
 
-puts "[ ] #{next_todo}" # String Interpolation
+# puts "[ ] #{next_todo}" # String Interpolation
 
 
 #Working with integers and floats
@@ -47,3 +47,27 @@ puts "String now is " + str_val
 
 #downcase => converts all letters to downcase
 puts "Downcase is " + str_val.downcase 
+
+#Working with Boolean
+
+puts 1 == 1
+puts "this" == "that"
+puts 1 < 2
+puts 1 > 2
+puts 89 >= 89
+
+#Chomp method is used to remove last characters from a string
+puts "Fictional".chomp("al")
+
+#Working with if statements
+puts "Fictional or Non-fictional ?"
+
+genre = gets.chomp.downcase
+
+if genre == "fiction"
+    puts "Try watching Cryptomania"
+elsif genre == "non-fiction"
+    puts "You should read the Ascent of Man by Jacob Bronowski!"
+else
+    puts "Oh I don't know about that genre"
+end 
